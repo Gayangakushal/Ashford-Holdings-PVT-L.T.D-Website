@@ -1,0 +1,271 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+@import "./components/site/site.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Sirocco Air Technologies — design system.
+ * Dark, architectural, technical. Neutral graphite surfaces, off-white type,
+ * a single restrained champagne accent. The logo keeps its own colours;
+ * the interface palette is independent of it.
+ */
+
+@theme inline {
+  --radius-sm: 1px;
+  --radius-md: 2px;
+  --radius-lg: 3px;
+  --radius-xl: 4px;
+  --radius-2xl: 6px;
+  --radius-3xl: 8px;
+  --radius-4xl: 10px;
+
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Sirocco surfaces & type */
+  --color-void: var(--void);
+  --color-carbon: var(--carbon);
+  --color-graphite: var(--graphite);
+  --color-plate: var(--plate);
+  --color-paper: var(--paper);
+  --color-mist: var(--mist);
+  --color-steel: var(--steel);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-brass: var(--brass);
+  --color-brass-dim: var(--brass-dim);
+}
+
+:root {
+  --radius: 2px;
+  color-scheme: dark;
+
+  --void: #080a0c;
+  --carbon: #0d1013;
+  --graphite: #12161a;
+  --plate: #1a1f24;
+  --paper: #f4f4f1;
+  --mist: #c8cdd1;
+  --steel: #8b9197;
+  --line: rgb(255 255 255 / 0.1);
+  --line-strong: rgb(255 255 255 / 0.18);
+  --brass: #c9b48a;
+  --brass-dim: #9d8b68;
+
+  --background: var(--void);
+  --foreground: var(--paper);
+  --card: var(--carbon);
+  --card-foreground: var(--paper);
+  --popover: var(--graphite);
+  --popover-foreground: var(--paper);
+  --primary: var(--paper);
+  --primary-foreground: var(--void);
+  --secondary: var(--graphite);
+  --secondary-foreground: var(--paper);
+  --muted: var(--graphite);
+  --muted-foreground: var(--steel);
+  --accent: var(--brass);
+  --accent-foreground: var(--void);
+  --destructive: #d0645a;
+  --destructive-foreground: var(--paper);
+  --border: var(--line);
+  --input: var(--line-strong);
+  --ring: var(--brass);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-mech: cubic-bezier(0.65, 0, 0.35, 1);
+  --header-h: 72px;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background: var(--void);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  :focus-visible {
+    outline: 1.5px solid var(--color-brass);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: var(--color-brass);
+    color: var(--color-void);
+  }
+}
+
+/* ---------- Type scale ---------- */
+
+@utility t-display {
+  font-size: clamp(2.75rem, 1.2rem + 6.6vw, 8.25rem);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  font-weight: 500;
+}
+
+@utility t-h1 {
+  font-size: clamp(2.5rem, 1.4rem + 4.4vw, 5.75rem);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+  font-weight: 500;
+}
+
+@utility t-h2 {
+  font-size: clamp(2rem, 1.25rem + 3vw, 4.25rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+  font-weight: 500;
+}
+
+@utility t-h3 {
+  font-size: clamp(1.375rem, 1.1rem + 1vw, 2rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+
+@utility t-lead {
+  font-size: clamp(1.0625rem, 0.98rem + 0.35vw, 1.3125rem);
+  line-height: 1.6;
+  color: var(--color-mist);
+}
+
+@utility t-body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-mist);
+}
+
+@utility t-small {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--color-steel);
+}
+
+/* Compact uppercase label */
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-brass);
+}
+
+/* Small technical metadata */
+@utility t-tech {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  line-height: 1.5;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-steel);
+}
+
+/* ---------- Layout ---------- */
+
+@utility container-x {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 90rem;
+  padding-inline: 1rem;
+  @media (min-width: 640px) {
+    padding-inline: 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    padding-inline: 2.5rem;
+  }
+  @media (min-width: 1536px) {
+    padding-inline: 3.5rem;
+  }
+}
+
+@utility section-y {
+  padding-block: clamp(5rem, 3rem + 7vw, 10rem);
+}
+
+/* Faint engineering grid */
+@utility tech-grid {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.035) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* ---------- Motion ---------- */
+
+@utility reveal {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition:
+    opacity 0.9s var(--ease-out),
+    transform 0.9s var(--ease-out);
+}
+
+@utility reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
