@@ -32,10 +32,9 @@ export const site = {
   },
   social: [
     {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/company/sirocco-air-technologies-pvt-ltd/",
+      label: "Facebook",
+      href: "https://www.facebook.com/profile.php?id=61581003546208",
     },
-    { label: "Facebook", href: "https://www.facebook.com/SiroccoAirTech/" },
   ],
 } as const;
 
