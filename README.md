@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ashford Holdings PVT L.T.D — website
 
 Marketing site for Ashford Holdings PVT L.T.D, an air and environmental engineering company in Sri Lanka. Built with TanStack Start, React 19, TypeScript and Tailwind CSS v4. The project is connected to Lovable.
@@ -70,3 +71,6 @@ node scripts/interaction-smoke.mjs <playwright-core/index.mjs> http://localhost:
 - the marquee (loop integrity and pause on hover)
 - reduced motion and no-JS rendering
 - the skip link and form validation
+=======
+# Ashford-Holdings-PVT-L.T.D-Website
+>>>>>>> ab1df3ac1c1d4dd8178838a23ed6b271a99e75a2
