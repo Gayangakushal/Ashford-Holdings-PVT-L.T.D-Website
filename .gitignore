@@ -1,5 +1,8 @@
 ﻿node_modules/
 .lovable/
+.output/
+.vercel/
+.wrangler/
 lovable/
 .env
 .env.*
