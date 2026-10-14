@@ -21,14 +21,14 @@ const stages = [
     id: "filtration",
     code: "B",
     title: "Filtration",
-    text: "Particulates, odours and microbes are removed — HEPA, UV-C, activated carbon or electrostatic stages, selected for the application.",
+    text: "Particulates, odours and microbes are removed, HEPA, UV-C, activated carbon or electrostatic stages, selected for the application.",
     discipline: { label: "Purification", href: "/solutions/air-purification-filtration" },
   },
   {
     id: "temperature",
     code: "C",
     title: "Temperature control",
-    text: "Coils and plant condition the air to the measured load — cooling, dehumidifying or evaporatively cooling it.",
+    text: "Coils and plant condition the air to the measured load, cooling, dehumidifying or evaporatively cooling it.",
     discipline: { label: "Air conditioning", href: "/solutions/air-conditioning-ventilation" },
   },
   {
@@ -41,9 +41,9 @@ const stages = [
   {
     id: "monitoring",
     code: "E",
-    title: "Monitoring",
-    text: "BMS sensors track temperature, humidity and air quality and adjust plant in real time.",
-    discipline: { label: "BMS & air quality", href: "/solutions/bms-air-quality" },
+    title: "Kitchen ESP",
+    text: "Kitchen ESP filtration captures smoke, grease and fine particles from cooking exhaust before discharge.",
+    discipline: { label: "Kitchen ESP", href: "/solutions/kitchen-esp" },
   },
   {
     id: "extraction",
@@ -102,7 +102,7 @@ export function AirflowIntelligence({ index = "04" }: { index?: string }) {
               Every system follows <span className="text-steel">the air.</span>
             </>
           }
-          intro="Ashford Holdings PVT L.T.D engineers the complete air path — not a single piece of equipment. Follow it through a building, stage by stage."
+          intro="Ashford Holdings PVT L.T.D engineers the complete air path, not a single piece of equipment. Follow it through a building, stage by stage."
         />
 
         <div className="mt-14 grid gap-10 lg:mt-20 lg:grid-cols-12 lg:gap-10">
@@ -276,7 +276,7 @@ function AirPathDiagram({ active }: { active: StageId }) {
         <AiTag x={510} y={112} code="D" label="Distribution" />
       </g>
 
-      {/* E · Monitoring (BMS) */}
+      {/* E · Monitoring (Kitchen ESP) */}
       <g data-stage="monitoring" className="ai-group">
         <rect x="196" y="500" width="54" height="70" className="ai-box" />
         <line x1="206" y1="514" x2="240" y2="514" className="ai-detail" />
@@ -295,7 +295,7 @@ function AirPathDiagram({ active }: { active: StageId }) {
             <circle cx={x} cy={y} r="12" className="ai-pulse" />
           </g>
         ))}
-        <AiTag x={196} y={484} code="E" label="BMS" />
+        <AiTag x={196} y={484} code="E" label="Kitchen ESP" />
       </g>
 
       {/* F · Extraction */}

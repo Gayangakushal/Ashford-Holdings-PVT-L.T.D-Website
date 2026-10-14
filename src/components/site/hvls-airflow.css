@@ -1,0 +1,163 @@
+@layer components {
+  .hvls-airflow {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: radial-gradient(ellipse at 50% 65%, #122b38, #10171e 65%, #0c1116);
+    color: var(--paper);
+    isolation: isolate;
+  }
+  .hvls-airflow svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .hvls-airflow-topline,
+  .hvls-airflow-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.625rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .hvls-airflow-topline {
+    border-bottom: 1px solid rgb(151 201 223 / 0.1);
+    color: #b4c9d6;
+  }
+  .hvls-airflow-status {
+    color: #78cee9;
+  }
+  .hvls-architecture {
+    stroke: #9db0be;
+    stroke-width: 1.2;
+  }
+  .hvls-diagram-labels {
+    fill: #7693a5;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+  .hvls-rotor {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: hvls-rotation var(--fan-period, 2.4s) linear infinite;
+  }
+  .hvls-particle,
+  .hvls-flow-arrow {
+    offset-rotate: auto;
+    animation: hvls-circulation 8s linear infinite;
+  }
+  .hvls-particle {
+    filter: drop-shadow(0 0 3px #78d8fa);
+  }
+  .hvls-airflow[data-running="false"] .hvls-rotor,
+  .hvls-airflow[data-running="false"] .hvls-particle,
+  .hvls-airflow[data-running="false"] .hvls-flow-arrow {
+    animation-play-state: paused;
+  }
+  .hvls-airflow-controls {
+    min-height: 3.75rem;
+    border-top: 1px solid rgb(151 201 223 / 0.1);
+    color: #91a9b8;
+  }
+  .hvls-airflow-controls label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: auto;
+  }
+  .hvls-airflow-controls input {
+    width: clamp(70px, 12vw, 130px);
+    accent-color: #78d8fa;
+    cursor: pointer;
+  }
+  .hvls-airflow-controls button {
+    border: 1px solid #49606e;
+    color: #bce9fa;
+    padding: 0.5rem 0.75rem;
+    min-width: 5rem;
+    cursor: pointer;
+  }
+  .hvls-airflow-controls button:hover {
+    background: rgb(120 216 250 / 0.08);
+  }
+  .hvls-airflow-controls :is(button, input):focus-visible {
+    outline: 2px solid #78d8fa;
+    outline-offset: 4px;
+  }
+  .hvls-airflow.is-compact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0;
+  }
+  .hvls-airflow.is-compact .hvls-airflow-topline {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: 0.55rem;
+  }
+  .hvls-airflow.is-compact .hvls-airflow-status {
+    display: none;
+  }
+  .solution-plate-layer .hvls-airflow svg,
+  .solution-row-media .hvls-airflow svg {
+    height: auto;
+    filter: none;
+  }
+  .feature-media:has(> .hvls-airflow) {
+    display: flex;
+    align-items: center;
+    background: #0c1116;
+  }
+  .hvls-airflow-detail {
+    margin-top: 4rem;
+  }
+  @keyframes hvls-rotation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes hvls-circulation {
+    to {
+      offset-distance: 100%;
+    }
+  }
+  @media (max-width: 480px) {
+    .hvls-airflow-topline,
+    .hvls-airflow-controls {
+      padding: 0.75rem;
+      letter-spacing: 0.025em;
+      gap: 0.5rem;
+    }
+    .hvls-airflow-topline {
+      font-size: 0.5rem;
+    }
+    .hvls-airflow-note {
+      max-width: 8ch;
+    }
+    .hvls-airflow-controls label {
+      gap: 0.4rem;
+    }
+    .hvls-airflow-controls button {
+      min-width: 4rem;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hvls-rotor,
+    .hvls-particle,
+    .hvls-flow-arrow {
+      animation: none !important;
+    }
+    .hvls-particle,
+    .hvls-flow-arrow {
+      display: none;
+    }
+  }
+}

@@ -12,9 +12,9 @@ import { seo } from "@/lib/seo";
 export const Route = createFileRoute("/solutions/")({
   head: () =>
     seo({
-      title: "Solutions — Ventilation, Air Conditioning, Purification, BMS & More",
+      title: "Solutions, Ventilation, Air Conditioning, Purification, Kitchen ESP & More",
       description:
-        "Air conditioning & ventilation, air purification & filtration, BMS & air quality, fire & gas suppression, dust extraction and racking & material handling from Ashford Holdings PVT L.T.D, Sri Lanka.",
+        "Air conditioning & ventilation, air purification & filtration, Kitchen ESP, dust extraction and HVLS fans from Ashford Holdings PVT L.T.D, Sri Lanka.",
       path: "/solutions",
     }),
   component: Solutions,
@@ -27,12 +27,12 @@ function Solutions() {
         eyebrow="Solutions"
         title={
           <>
-            Six disciplines.
+            Five disciplines.
             <br />
             <span className="text-steel">One air path.</span>
           </>
         }
-        intro="From the air a building breathes to the racking that stores what it produces — engineered, supplied and installed by one team."
+        intro="From clean kitchen exhaust to comfortable, well-ventilated spaces, engineered, supplied and installed by one team."
         image="/assets/hvac/plate-heat-exchanger-plant.jpg"
         crumbs={[{ label: "Solutions" }]}
         meta={disciplines.slice(0, 4).map((d) => ({ label: d.index, value: d.short }))}

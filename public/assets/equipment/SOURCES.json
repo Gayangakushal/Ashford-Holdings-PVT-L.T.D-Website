@@ -1,0 +1,60 @@
+{
+  "note": "Representative equipment-family imagery from manufacturer product pages. Exact supplied model is selected for the project. Original brand assets were not changed.",
+  "assets": [
+    {
+      "name": "inline-mixed-flow-fan",
+      "page": "https://www.vortice.com/en/commercial-ventilation/mixed-flow-fans/in-line/17179",
+      "image": "https://www.vortice.com/media2/Export/Inglese/Foto_WEB/70_EN_17179_Foto_WEB_Lineo_150_ES_193975.png"
+    },
+    {
+      "name": "centrifugal-inline-fan",
+      "page": "https://www.vortice.com/en/commercial-ventilation/centrifugal-fans/in-line/16028",
+      "image": "https://www.vortice.com/media2/Export/Inglese/Foto_WEB/70_EN_16028_Foto_WEB_ca_V0_e_01_76410.png"
+    },
+    {
+      "name": "duct-axial-fan",
+      "page": "https://www.casals.com/en/fanware/50/fans/hc",
+      "image": "https://casals-fanware-prod-static.s3.eu-west-1.amazonaws.com/media/tenant/1/fans/series/298/original-1757681034-7243.jpg"
+    },
+    {
+      "name": "cooling-tower",
+      "page": "https://www.evapco.com/products/cooling-towers-factory-assembled/cooling-tower",
+      "image": "https://www.evapco.com/sites/evapco.com/files/images/2017-05/AT%20Cooling%20Towers.jpg"
+    },
+    {
+      "name": "atex-ventilation-fan",
+      "page": "https://www.casals.com/en/fanware/50/fans/hcx-atex",
+      "image": "https://casals-fanware-prod-static.s3.eu-west-1.amazonaws.com/media/tenant/1/fans/series/277/original-1723613633-6562.jpg"
+    },
+    {
+      "name": "corrosive-environment-fan",
+      "page": "https://www.casals.com/en/fanware/50/fans/mbp",
+      "image": "https://casals-fanware-prod-static.s3.eu-west-1.amazonaws.com/media/tenant/1/fans/series/123/original-1664953813-5067.jpg"
+    },
+    {
+      "name": "kitchen-esp",
+      "page": "https://www.purifiedair.com/solutions/esp-range/",
+      "image": "https://www.purifiedair.com/wp-content/uploads/2021/12/ESP-Angled.webp"
+    },
+    {
+      "name": "kitchen-canopy",
+      "page": "https://www.halton.com/products/kve-capture-jet-commercial-kitchen-hood-na-en/",
+      "image": "https://images.halton.com/app/uploads/2021/07/Halton-Capture-Jet-KVE-Kitchen-Exhaust-Hood.jpg"
+    },
+    {
+      "name": "air-purifier",
+      "page": "https://www.camfil.com/en/products/air-cleaners--air-purifiers/city-range/city/city-m-_-27783",
+      "image": "https://www.camfil.com/dam/images/207811/1702192/City-M.png?width=900&height=900&bgcolor=white"
+    },
+    {
+      "name": "pre-insulated-duct",
+      "page": "https://p3italy.it/en/",
+      "image": "https://p3italy.it/wp-content/uploads/2021/11/canali-daria-p3ductalEN.png"
+    },
+    {
+      "name": "industrial-air-conditioning",
+      "page": "https://www.daikin.com/products/ac/lineup/rooftops",
+      "image": "https://www.daikin.com/products/ac/lineup/-/media/Project/Daikin/daikin_com/products/ac/lineup/rooftops/images/202507/pic_lineup_01%20png"
+    }
+  ]
+}

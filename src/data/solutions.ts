@@ -207,7 +207,7 @@ export const solutions: Solution[] = [
       "Filtered fresh air and make-up air systems that replace extracted air and maintain indoor air quality.",
     overview: [
       "Every extraction system needs a matching supply. Where make-up air is not provided the building goes negative, extraction rates drop and air is drawn in through doors and gaps, carrying dust and heat with it.",
-      "Fresh air systems introduce filtered outside air at the right volume and position — tempered where required — so extraction performs as designed and occupants get the air changes they need.",
+      "Fresh air systems introduce filtered outside air at the right volume and position, tempered where required, so extraction performs as designed and occupants get the air changes they need.",
     ],
     applications: [
       "Commercial kitchens requiring make-up air",
@@ -268,7 +268,7 @@ export const solutions: Solution[] = [
       "Air-conditioning for production, process and large commercial spaces where standard comfort cooling is not sufficient.",
     overview: [
       "Industrial spaces carry heat loads that domestic and light commercial equipment is not built for: process heat, high ceilings, large door openings and continuous running hours.",
-      "We select and install air-conditioning plant sized for those conditions — packaged units, ducted systems, air handling and fan coil units — with the air distribution designed alongside it.",
+      "We select and install air-conditioning plant sized for those conditions, packaged units, ducted systems, air handling and fan coil units, with the air distribution designed alongside it.",
     ],
     applications: [
       "Production and assembly areas",
@@ -310,7 +310,7 @@ export const solutions: Solution[] = [
     faqs: [
       {
         q: "Can you cool only part of a large facility?",
-        a: "Yes — zoned or spot cooling is often the practical answer where only certain processes or areas need controlled conditions.",
+        a: "Yes, zoned or spot cooling is often the practical answer where only certain processes or areas need controlled conditions.",
       },
       {
         q: "What about high ceilings and open doors?",
@@ -328,7 +328,7 @@ export const solutions: Solution[] = [
     summary:
       "Stainless steel extraction canopies with grease filtration, sized and positioned over the cooking line.",
     overview: [
-      "A canopy has to capture the thermal plume before it escapes into the kitchen. That depends on canopy size relative to the appliance line, overhang, capture height and extract volume — not just on hanging a hood above the range.",
+      "A canopy has to capture the thermal plume before it escapes into the kitchen. That depends on canopy size relative to the appliance line, overhang, capture height and extract volume, not just on hanging a hood above the range.",
       "Canopies are fabricated in stainless steel with grease filters, drainage and lighting, and connected into a ducting and extract fan system designed as a whole.",
     ],
     applications: [
@@ -372,7 +372,7 @@ export const solutions: Solution[] = [
     faqs: [
       {
         q: "Do you fabricate canopies to size?",
-        a: "Yes — canopies are fabricated to suit the actual appliance line and the available ceiling height.",
+        a: "Yes, canopies are fabricated to suit the actual appliance line and the available ceiling height.",
       },
       {
         q: "Is make-up air always required?",
@@ -509,7 +509,7 @@ export const solutions: Solution[] = [
     navTitle: "PIR Ducting",
     category: "Ducting",
     summary:
-      "Pre-insulated PIR panel ductwork — light, low-leakage and thermally efficient for air-conditioning distribution.",
+      "Pre-insulated PIR panel ductwork, light, low-leakage and thermally efficient for air-conditioning distribution.",
     overview: [
       "PIR duct is formed from rigid pre-insulated panel with aluminium facings, so insulation and duct are a single element. That removes the separate lagging stage and gives a low thermal loss, low-leakage distribution system.",
       "It is well suited to air-conditioning supply in ceiling voids where weight, installation speed and condensation control matter.",
@@ -551,7 +551,7 @@ export const solutions: Solution[] = [
     faqs: [
       {
         q: "Where should PIR not be used?",
-        a: "It is not used for kitchen grease exhaust or high-temperature extraction — those runs are fabricated in GI.",
+        a: "It is not used for kitchen grease exhaust or high-temperature extraction, those runs are fabricated in GI.",
       },
       {
         q: "Does PIR duct prevent condensation?",
@@ -692,7 +692,7 @@ export const solutions: Solution[] = [
     summary:
       "Single inlet, in-line and belt driven centrifugal fans for systems requiring higher static pressure.",
     overview: [
-      "Centrifugal fans are used where the system resistance is high — long duct runs, filtration stages, dust collectors and kitchen exhaust. Backward curved and forward curved impellers suit different pressure and volume combinations.",
+      "Centrifugal fans are used where the system resistance is high, long duct runs, filtration stages, dust collectors and kitchen exhaust. Backward curved and forward curved impellers suit different pressure and volume combinations.",
       "Selection is made at the calculated duty point, allowing for filter loading and duct resistance, and includes drive arrangement, motor position and air stream temperature.",
     ],
     applications: [
@@ -739,7 +739,7 @@ export const solutions: Solution[] = [
       },
       {
         q: "Can fan speed be adjusted after installation?",
-        a: "Yes — pulley changes on belt drives or a speed drive on direct drive units allow the duty to be trimmed.",
+        a: "Yes, pulley changes on belt drives or a speed drive on direct drive units allow the duty to be trimmed.",
       },
     ],
     keywords: "Industrial Centrifugal Fans, high pressure fans Sri Lanka",

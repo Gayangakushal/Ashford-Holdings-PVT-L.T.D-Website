@@ -53,6 +53,14 @@ export function CTA({
           <ButtonLink href={site.phoneHref} variant="secondary">
             Talk to our engineers
           </ButtonLink>
+          <ButtonLink
+            href={site.whatsappHref}
+            variant="secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Chat on WhatsApp
+          </ButtonLink>
         </div>
       </div>
     </section>

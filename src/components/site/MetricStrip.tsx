@@ -11,7 +11,7 @@ const metrics = [
   {
     value: disciplines.length,
     label: "Engineering disciplines",
-    note: "Air, safety, controls & storage",
+    note: "Ventilation, filtration & cooling",
   },
   {
     value: industries.length,

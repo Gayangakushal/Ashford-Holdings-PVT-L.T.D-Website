@@ -68,7 +68,11 @@ export function Footer() {
           </p>
           <p className="footer-credit">
             Developed by{" "}
-            <a href="https://share.google/ghvEWdoY52yWD0uXs" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://share.google/ghvEWdoY52yWD0uXs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Novonex Software Solusions
             </a>
           </p>

@@ -1088,6 +1088,32 @@
 }
 
 /* ---------- Solutions system ---------- */
+/* Persistent direct contact. Cookie notice stays above this control. */
+.whatsapp-contact {
+  position: fixed;
+  right: max(1.25rem, env(safe-area-inset-right));
+  bottom: max(1.25rem, env(safe-area-inset-bottom));
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  min-height: 52px;
+  padding: 0.875rem 1.125rem;
+  border: 1px solid rgb(255 255 255 / 0.18);
+  border-radius: 999px;
+  background: #167d46;
+  color: #fff;
+  box-shadow: 0 5px 22px rgb(0 0 0 / 0.28);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  transition: background 180ms ease, transform 180ms ease;
+}
+.whatsapp-contact:hover { background: #12683a; transform: translateY(-2px); }
+.whatsapp-contact:focus-visible { outline: 2px solid var(--paper); outline-offset: 4px; }
+@media (max-width: 639px) {
+  .whatsapp-contact { padding: 0.875rem; right: 1rem; bottom: max(1rem, env(safe-area-inset-bottom)); }
+  .whatsapp-contact span { display: none; }
+}
 .solution-plate {
   position: relative;
   aspect-ratio: 4 / 3.4;
@@ -2606,6 +2632,9 @@
   transform: scale(1.05);
   filter: grayscale(0) brightness(0.92);
 }
+.equipment-card .sys-card-media { background: #f5f6f7; }
+.equipment-card .sys-card-media img { object-fit: contain; filter: none; }
+.equipment-card:hover .sys-card-media img { filter: none; transform: scale(1.02); }
 .sys-card-body {
   position: relative;
   display: flex;
@@ -2907,6 +2936,7 @@
     .footer-brand .logo-img { width: 40px; height: 40px; }
   }
   .brand-loader {
+    z-index: 1000;
     position: fixed;
     inset: 0;
     width: 100%;
@@ -2949,9 +2979,9 @@
   .brand-loader-name { margin-top: 2rem; font-size: clamp(1rem, 2.4vw, 1.75rem); letter-spacing: 0.08em; animation: ashford-emerge 900ms 150ms ease both; }
   .brand-loader-caption { margin-top: 0.75rem; font-family: var(--font-mono); font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: #c9a65c; animation: ashford-emerge 900ms 300ms ease both; }
   .brand-loader-line { width: min(220px, 60vw); height: 1px; margin-top: 2rem; background: linear-gradient(90deg, transparent, #d3b777, transparent); transform-origin: center; animation: ashford-line 1.6s ease both; }
-  .brand-loader-skip { position: absolute; bottom: max(2rem, env(safe-area-inset-bottom)); right: 2rem; padding: 0.75rem 1rem; border: 1px solid rgb(201 166 92 / 0.25); font-size: 0.75rem; color: var(--mist); cursor: pointer; }
-  .brand-loader-skip:hover { color: #d3b777; border-color: #d3b777; }
-  .brand-loader-skip:focus-visible { outline: 2px solid #d3b777; outline-offset: 4px; }
+  .brand-loader.is-preparing * { animation: none !important; }
+  .brand-loader.is-preparing .brand-loader-orbit,
+  .brand-loader.is-preparing .brand-loader-line { opacity: 0; }
   @keyframes ashford-emerge { from { opacity: 0; transform: translateY(12px) scale(0.94); } to { opacity: 1; transform: translateY(0) scale(1); } }
   @keyframes ashford-orbit { to { transform: rotate(360deg); } }
   @keyframes ashford-line { from { transform: scaleX(0); opacity: 0; } to { transform: scaleX(1); opacity: 1; } }

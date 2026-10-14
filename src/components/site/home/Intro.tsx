@@ -17,10 +17,9 @@ export function Intro() {
           </Reveal>
           <Reveal delay={120} className="lg:col-span-4 lg:pt-3">
             <p className="t-body">
-              Ashford Holdings PVT L.T.D designs, supplies and installs the systems that move,
-              clean, cool, monitor and protect the air inside industrial, commercial and
-              infrastructure facilities — together with the racking and material-handling systems
-              that keep those facilities running.
+              Ashford Holdings PVT L.T.D designs, supplies and installs the systems that move, clean
+              and cool the air inside industrial, commercial and infrastructure facilities,
+              including Kitchen ESP filtration and HVLS fans for wide-area comfort.
             </p>
             <TextLink href="/about" className="mt-8">
               About Ashford Holdings PVT L.T.D
@@ -38,7 +37,7 @@ export function Intro() {
               loading="lazy"
               decoding="async"
             />
-            <figcaption className="t-tech">Fig. 03 — Plant room ductwork & pipework</figcaption>
+            <figcaption className="t-tech">Fig. 03, Plant room ductwork & pipework</figcaption>
           </Reveal>
           <div className="grid bg-void lg:col-span-5">
             <div className="intro-statement">

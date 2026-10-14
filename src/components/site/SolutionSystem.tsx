@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { AppLink, Arrow, TextLink } from "@/components/site/Buttons";
 import { RackingDrawing } from "@/components/site/RackingDrawing";
+import { HvlsAirflow } from "@/components/site/HvlsAirflow";
 import { SectionLabel } from "@/components/site/SectionLabel";
 import { disciplines } from "@/data/disciplines";
 import { cn } from "@/lib/utils";
 
 /**
- * "What we do": a stacked, interactive list of the six disciplines.
+ * "What we do": a stacked, interactive list of the engineering disciplines.
  * Desktop: hovering/focusing a row swaps the image plate and expands its detail.
  * Mobile: an accessible accordion with the image inside each panel.
  */
@@ -26,8 +27,8 @@ export function SolutionSystem({ index = "05" }: { index?: string }) {
                 how air moves.
               </h2>
               <p className="t-body mt-6 max-w-md">
-                Six disciplines under one engineering team — so ventilation, conditioning,
-                purification, controls, protection and storage are designed to work together.
+                Five disciplines under one engineering team, ventilation, conditioning,
+                purification, kitchen exhaust filtration and wide-area air circulation.
               </p>
               <div className="solution-plate mt-10 hidden lg:block" aria-hidden="true">
                 {disciplines.map((d, i) => (
@@ -35,7 +36,9 @@ export function SolutionSystem({ index = "05" }: { index?: string }) {
                     key={d.slug}
                     className={cn("solution-plate-layer", i === active && "is-active")}
                   >
-                    {d.image ? (
+                    {d.slug === "hvls-fans" ? (
+                      <HvlsAirflow active={i === active} compact />
+                    ) : d.image ? (
                       <img src={d.image} alt="" loading="lazy" decoding="async" />
                     ) : (
                       <RackingDrawing label="Racking elevation" />
@@ -43,7 +46,9 @@ export function SolutionSystem({ index = "05" }: { index?: string }) {
                   </div>
                 ))}
                 <div className="solution-plate-meta">
-                  <span>{disciplines[active]!.index} / 06</span>
+                  <span>
+                    {disciplines[active]!.index} / {String(disciplines.length).padStart(2, "0")}
+                  </span>
                   <span>{disciplines[active]!.short}</span>
                 </div>
                 <span className="solution-plate-scan" key={active} />
@@ -83,7 +88,9 @@ export function SolutionSystem({ index = "05" }: { index?: string }) {
                   >
                     <div className="solution-row-body-inner">
                       <div className="solution-row-media lg:hidden">
-                        {d.image ? (
+                        {d.slug === "hvls-fans" ? (
+                          <HvlsAirflow active={isActive} compact />
+                        ) : d.image ? (
                           <img src={d.image} alt={d.imageAlt} loading="lazy" decoding="async" />
                         ) : (
                           <RackingDrawing label="Racking elevation" />

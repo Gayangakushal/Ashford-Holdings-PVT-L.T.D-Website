@@ -8,8 +8,8 @@ import { seo } from "@/lib/seo";
 export const Route = createFileRoute("/contact")({
   head: () =>
     seo({
-      title: "Contact — Start a Project",
-      description: `Contact Ashford Holdings PVT L.T.D about ventilation, air conditioning, purification, BMS, fire & gas suppression, dust extraction or racking. Call ${site.phone} or email ${site.email}.`,
+      title: "Contact, Start a Project",
+      description: `Contact Ashford Holdings PVT L.T.D about ventilation, air conditioning, purification, Kitchen ESP, dust extraction or HVLS fans. Call ${site.phone} or email ${site.email}.`,
       path: "/contact",
     }),
   component: Contact,

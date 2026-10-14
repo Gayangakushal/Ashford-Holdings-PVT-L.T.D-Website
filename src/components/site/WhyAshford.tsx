@@ -8,23 +8,23 @@ import { SectionLabel } from "@/components/site/SectionLabel";
 const reasons = [
   {
     title: "Integration",
-    text: "Ventilation, air conditioning, purification, BMS, fire & gas suppression, dust extraction and racking from one engineering team — designed as one system, not six contracts.",
-    evidence: "Six disciplines, one team",
+    text: "Ventilation, air conditioning, purification, Kitchen ESP, dust extraction and HVLS fans from one engineering team, designed as one system, not five contracts.",
+    evidence: "Five disciplines, one team",
   },
   {
     title: "Precision",
     text: "Systems are surveyed, calculated and drawn around the actual process, occupancy and building before equipment is selected.",
-    evidence: "“Completed to our exacting standards” — Variosystems",
+    evidence: "“Completed to our exacting standards”, Variosystems",
   },
   {
     title: "Reliability",
     text: "Delivery that holds to programme across Sri Lanka and overseas, including multi-country coordination.",
-    evidence: "“Installed ahead of time” — DOK Solutions Lanka",
+    evidence: "“Installed ahead of time”, DOK Solutions Lanka",
   },
   {
     title: "Partnership",
     text: "Long-term relationships built on post-installation support and continual improvement in energy efficiency.",
-    evidence: "“For over 15 years, we have relied on their expertise” — CBL",
+    evidence: "“For over 15 years, we have relied on their expertise”, CBL",
   },
 ];
 

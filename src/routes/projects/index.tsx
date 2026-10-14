@@ -9,9 +9,9 @@ import { seo } from "@/lib/seo";
 export const Route = createFileRoute("/projects/")({
   head: () =>
     seo({
-      title: "Projects — Ventilation, Extraction & Racking",
+      title: "Projects, Ventilation, Extraction",
       description:
-        "Selected Ashford Holdings PVT L.T.D projects in ventilation, fume extraction and racking for clients including Variosystems, Ceylon Biscuits Limited, A&E Bangladesh and DOK Solutions Lanka.",
+        "Selected Ashford Holdings PVT L.T.D projects in ventilation and fume extraction for clients including Variosystems, Ceylon Biscuits Limited.",
       path: "/projects",
     }),
   component: Projects,
@@ -36,8 +36,8 @@ function Projects() {
         crumbs={[{ label: "Projects" }]}
         meta={[
           { label: "Projects listed", value: String(projects.length).padStart(2, "0") },
-          { label: "Countries", value: "Sri Lanka · Bangladesh" },
-          { label: "Disciplines", value: "Ventilation · Extraction · Racking" },
+          { label: "Countries", value: "Sri Lanka" },
+          { label: "Disciplines", value: "Ventilation · Extraction" },
         ]}
       />
       <section className="section-y">
@@ -49,8 +49,7 @@ function Projects() {
           </div>
           <p className="t-tech mt-10 max-w-2xl">
             Photographs marked “representative image” show comparable systems from Ashford Holdings
-            PVT L.T.D’s supplied material, not the client’s site. Storage projects are shown as
-            engineering drawings.
+            PVT L.T.D’s supplied material, not the client’s site.
           </p>
         </div>
       </section>

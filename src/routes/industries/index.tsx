@@ -8,9 +8,9 @@ import { seo } from "@/lib/seo";
 export const Route = createFileRoute("/industries/")({
   head: () =>
     seo({
-      title: "Industries — Manufacturing, FMCG, Apparel, Healthcare & More",
+      title: "Industries, Manufacturing, FMCG, Apparel, Healthcare & More",
       description:
-        "Ventilation, air conditioning, purification, extraction and racking for manufacturing, FMCG, apparel & textiles, food & hospitality, healthcare, plantation, energy and transport sectors in Sri Lanka.",
+        "Ventilation, air conditioning, purification, extraction, Kitchen ESP and HVLS fans for manufacturing, FMCG, apparel & textiles, food & hospitality, healthcare, plantation, energy and transport sectors in Sri Lanka.",
       path: "/industries",
     }),
   component: Industries,
@@ -28,7 +28,7 @@ function Industries() {
             <span className="text-steel">around the process.</span>
           </>
         }
-        intro={`Ashford Holdings PVT L.T.D serves ${industries.length} sectors. Each has its own heat, fume, dust, hygiene and storage conditions — the engineering starts there.`}
+        intro={`Ashford Holdings PVT L.T.D serves ${industries.length} sectors. Each has its own heat, fume, dust, hygiene and storage conditions, the engineering starts there.`}
         image="/assets/hvac/ducted-air-distribution-2.jpg"
         crumbs={[{ label: "Industries" }]}
       />

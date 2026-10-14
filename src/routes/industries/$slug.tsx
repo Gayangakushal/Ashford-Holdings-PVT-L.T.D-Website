@@ -17,7 +17,7 @@ export const Route = createFileRoute("/industries/$slug")({
     const i = industryBySlug(params.slug);
     if (!i) return { meta: [{ title: "Industry not found | Ashford Holdings PVT L.T.D" }] };
     return seo({
-      title: `${i.name} — Industry`,
+      title: `${i.name}, Industry`,
       description: i.summary,
       path: `/industries/${i.slug}`,
       image: i.image,

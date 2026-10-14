@@ -2,6 +2,7 @@ import { createFileRoute, notFound } from "@tanstack/react-router";
 import { ButtonLink } from "@/components/site/Buttons";
 import { ProductCard } from "@/components/site/Cards";
 import { CTA } from "@/components/site/CTA";
+import { HvlsAirflow } from "@/components/site/HvlsAirflow";
 import { PageHero } from "@/components/site/PageHero";
 import { SectionLabel } from "@/components/site/SectionLabel";
 import { productImages } from "@/data/media";
@@ -40,6 +41,7 @@ function ProductDetail() {
         title={p.name}
         intro={p.short}
         image={productImages[p.slug]}
+        imageAlt={`${p.name}, representative equipment image`}
         crumbs={[{ label: "Equipment", href: "/products" }, { label: p.name }]}
       >
         <ButtonLink href="/contact#enquiry">Request a quotation</ButtonLink>
@@ -89,6 +91,11 @@ function ProductDetail() {
         </div>
       </section>
 
+      {p.slug === "hvls-fans" && (
+        <div className="container-x mb-20">
+          <HvlsAirflow />
+        </div>
+      )}
       {related.length ? (
         <section
           className="section-y border-t border-line bg-carbon"

@@ -19,8 +19,10 @@ function Track({
 }) {
   return (
     <div className="marquee" role="group" aria-label={label}>
-      <div className={reverse ? "marquee-track is-reverse" : "marquee-track"}
-        style={{ animationDuration: `${logos.length * 8}s` }}>
+      <div
+        className={reverse ? "marquee-track is-reverse" : "marquee-track"}
+        style={{ animationDuration: `${logos.length * 8}s` }}
+      >
         {[false, true].map((dup) => (
           <ul key={String(dup)} className="marquee-set" aria-hidden={dup || undefined}>
             {logos.map((logo) => (
@@ -61,8 +63,12 @@ export function LogoMarquee({ index = "12" }: { index?: string }) {
       </div>
       <div className="mt-12 grid gap-px">
         {Array.from({ length: 4 }, (_, row) => (
-          <Track key={row} logos={clientLogos.slice(row * rowSize, (row + 1) * rowSize)}
-            reverse={row % 2 === 1} label={`Clients, row ${row + 1}`} />
+          <Track
+            key={row}
+            logos={clientLogos.slice(row * rowSize, (row + 1) * rowSize)}
+            reverse={row % 2 === 1}
+            label={`Clients, row ${row + 1}`}
+          />
         ))}
       </div>
     </section>

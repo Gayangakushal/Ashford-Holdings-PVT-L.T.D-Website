@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 export function RackingDrawing({
   className,
   height,
-  label = "Elevation — racking bay",
+  label = "Elevation, racking bay",
 }: {
   className?: string | undefined;
   height?: string | undefined;

@@ -15,7 +15,7 @@ export const Route = createFileRoute("/about")({
     seo({
       title: "About Ashford Holdings PVT L.T.D",
       description:
-        "Ashford Holdings PVT L.T.D is an air and environmental engineering company in Sri Lanka — ventilation, air conditioning, purification, BMS, fire & gas suppression, dust extraction and racking.",
+        "Ashford Holdings PVT L.T.D is an air and environmental engineering company in Sri Lanka, ventilation, air conditioning, purification, Kitchen ESP, dust extraction and HVLS fans.",
       path: "/about",
       image: "/assets/hvac/plate-heat-exchanger-plant.jpg",
     }),
@@ -34,7 +34,7 @@ function About() {
             <span className="text-steel">{site.tagline.split(". ")[1]}</span>
           </>
         }
-        intro="Ashford Holdings PVT L.T.D leads in air and environmental engineering across Sri Lanka — and, alongside it, the racking, mezzanine and material-handling systems that keep facilities running."
+        intro="Ashford Holdings PVT L.T.D delivers ventilation, air conditioning, purification, Kitchen ESP and HVLS fan solutions across Sri Lanka."
         image="/assets/hvac/plate-heat-exchanger-plant.jpg"
         crumbs={[{ label: "About" }]}
       />
@@ -47,14 +47,12 @@ function About() {
           </div>
           <div className="lg:col-span-6 lg:col-start-7">
             <p className="t-lead">
-              Our work spans ventilation, air purification, cooling and air conditioning, fire and
-              gas suppression, building management systems, workplace air quality, ducting and dust
-              extraction.
+              Our work spans ventilation, air purification, cooling and air conditioning, kitchen
+              exhaust filtration, ducting and dust extraction.
             </p>
             <p className="t-body mt-6">
-              The same engineering discipline extends to industrial storage — racking systems,
-              mezzanines, conveyor networks and material-handling set-ups — for warehouses,
-              logistics hubs and factories.
+              HVLS fans bring gentle, wide-area circulation to factories, warehouses and commercial
+              spaces, helping improve comfort and air distribution.
             </p>
             <ul className="mt-10 grid gap-px border border-line bg-line sm:grid-cols-2">
               {disciplines.map((d) => (
@@ -106,7 +104,7 @@ function About() {
             label="Delivery"
             id="process-title"
             title="How a project runs."
-            intro="Survey, engineer, select, fabricate, install, commission — one accountable team from first visit to handover."
+            intro="Survey, engineer, select, fabricate, install, commission, one accountable team from first visit to handover."
           />
           <ol className="step-grid mt-14">
             {process.map((p) => (

@@ -26,7 +26,7 @@ const raw: Omit<Industry, "index">[] = [
       "Airborne dust from cutting and finishing",
       "Make-up air for extracted volumes",
     ],
-    disciplines: ["air-conditioning-ventilation", "dust-extraction", "racking-material-handling"],
+    disciplines: ["air-conditioning-ventilation", "dust-extraction", "hvls-fans"],
     clients: ["Variosystems Pvt Ltd"],
     image: "/assets/hvac/extraction-installation.jpg",
   },
@@ -41,13 +41,10 @@ const raw: Omit<Industry, "index">[] = [
       "Dense storage of finished goods",
       "Continuous operation",
     ],
-    disciplines: [
-      "air-conditioning-ventilation",
-      "air-purification-filtration",
-      "racking-material-handling",
-    ],
+    disciplines: ["air-conditioning-ventilation", "air-purification-filtration", "hvls-fans"],
     clients: ["Ceylon Biscuits Limited (CBL)"],
-    image: "https://images.pexels.com/photos/4176427/pexels-photo-4176427.jpeg?auto=compress&cs=tinysrgb&w=1280",
+    image:
+      "https://images.pexels.com/photos/4176427/pexels-photo-4176427.jpeg?auto=compress&cs=tinysrgb&w=1280",
   },
   {
     slug: "consumer-retail",
@@ -60,9 +57,10 @@ const raw: Omit<Industry, "index">[] = [
       "Back-of-house storage",
       "Energy use across long trading hours",
     ],
-    disciplines: ["air-conditioning-ventilation", "bms-air-quality", "racking-material-handling"],
+    disciplines: ["air-conditioning-ventilation", "kitchen-esp", "hvls-fans"],
     clients: [],
-    image: "https://images.pexels.com/photos/16211537/pexels-photo-16211537.jpeg?auto=compress&cs=tinysrgb&w=1280",
+    image:
+      "https://images.pexels.com/photos/16211537/pexels-photo-16211537.jpeg?auto=compress&cs=tinysrgb&w=1280",
   },
   {
     slug: "food-beverage-hospitality",
@@ -75,13 +73,10 @@ const raw: Omit<Industry, "index">[] = [
       "Noise near guest areas",
       "Kitchen fire protection",
     ],
-    disciplines: [
-      "air-purification-filtration",
-      "fire-gas-suppression",
-      "air-conditioning-ventilation",
-    ],
+    disciplines: ["air-purification-filtration", "air-conditioning-ventilation"],
     clients: [],
-    image: "https://images.pexels.com/photos/6375553/pexels-photo-6375553.jpeg?auto=compress&cs=tinysrgb&w=1280",
+    image:
+      "https://images.pexels.com/photos/6375553/pexels-photo-6375553.jpeg?auto=compress&cs=tinysrgb&w=1280",
   },
   {
     slug: "government-state",
@@ -94,9 +89,10 @@ const raw: Omit<Industry, "index">[] = [
       "Critical-room protection",
       "Compliance with specification",
     ],
-    disciplines: ["air-conditioning-ventilation", "fire-gas-suppression", "bms-air-quality"],
+    disciplines: ["air-conditioning-ventilation", "kitchen-esp"],
     clients: [],
-    image: "https://images.pexels.com/photos/14544989/pexels-photo-14544989.jpeg?auto=compress&cs=tinysrgb&w=1280",
+    image:
+      "https://images.pexels.com/photos/14544989/pexels-photo-14544989.jpeg?auto=compress&cs=tinysrgb&w=1280",
   },
   {
     slug: "apparel-textiles",
@@ -109,9 +105,10 @@ const raw: Omit<Industry, "index">[] = [
       "Operator comfort",
       "Raw material and finished goods storage",
     ],
-    disciplines: ["air-conditioning-ventilation", "dust-extraction", "racking-material-handling"],
+    disciplines: ["air-conditioning-ventilation", "dust-extraction", "hvls-fans"],
     clients: ["MAS Intimates Bangladesh", "A&E Bangladesh"],
-    image: "https://images.pexels.com/photos/31019576/pexels-photo-31019576.jpeg?auto=compress&cs=tinysrgb&w=1280",
+    image:
+      "https://images.pexels.com/photos/31019576/pexels-photo-31019576.jpeg?auto=compress&cs=tinysrgb&w=1280",
   },
   {
     slug: "healthcare",
@@ -124,9 +121,10 @@ const raw: Omit<Industry, "index">[] = [
       "Low noise in patient areas",
       "Continuous plant operation",
     ],
-    disciplines: ["air-purification-filtration", "air-conditioning-ventilation", "bms-air-quality"],
+    disciplines: ["air-purification-filtration", "air-conditioning-ventilation", "kitchen-esp"],
     clients: [],
-    image: "https://images.pexels.com/photos/20186736/pexels-photo-20186736.jpeg?auto=compress&cs=tinysrgb&w=1280",
+    image:
+      "https://images.pexels.com/photos/20186736/pexels-photo-20186736.jpeg?auto=compress&cs=tinysrgb&w=1280",
   },
   {
     slug: "agriculture-plantation",
@@ -139,9 +137,14 @@ const raw: Omit<Industry, "index">[] = [
       "Process ventilation",
       "Dust from processing",
     ],
-    disciplines: ["racking-material-handling", "air-conditioning-ventilation", "dust-extraction"],
-    clients: ["George Steuart Teas Pvt Ltd", "BPL Teas Pvt Ltd", "London Tea Exchange Kefro Pvt Ltd"],
-    image: "https://images.pexels.com/photos/35574282/pexels-photo-35574282.jpeg?auto=compress&cs=tinysrgb&w=1280",
+    disciplines: ["hvls-fans", "air-conditioning-ventilation", "dust-extraction"],
+    clients: [
+      "George Steuart Teas Pvt Ltd",
+      "BPL Teas Pvt Ltd",
+      "London Tea Exchange Kefro Pvt Ltd",
+    ],
+    image:
+      "https://images.pexels.com/photos/35574282/pexels-photo-35574282.jpeg?auto=compress&cs=tinysrgb&w=1280",
   },
   {
     slug: "energy-utilities",
@@ -154,7 +157,7 @@ const raw: Omit<Industry, "index">[] = [
       "Gas detection",
       "Unattended operation",
     ],
-    disciplines: ["air-conditioning-ventilation", "fire-gas-suppression", "bms-air-quality"],
+    disciplines: ["air-conditioning-ventilation", "kitchen-esp"],
     clients: [],
     image: "/assets/hvac/plate-heat-exchanger-plant.jpg",
   },
@@ -169,9 +172,10 @@ const raw: Omit<Industry, "index">[] = [
       "Critical-room protection",
       "Energy monitoring across sites",
     ],
-    disciplines: ["air-conditioning-ventilation", "bms-air-quality", "fire-gas-suppression"],
+    disciplines: ["air-conditioning-ventilation", "kitchen-esp"],
     clients: [],
-    image: "https://images.pexels.com/photos/35076215/pexels-photo-35076215.jpeg?auto=compress&cs=tinysrgb&w=1280",
+    image:
+      "https://images.pexels.com/photos/35076215/pexels-photo-35076215.jpeg?auto=compress&cs=tinysrgb&w=1280",
   },
   {
     slug: "transport-engineering",
@@ -184,9 +188,10 @@ const raw: Omit<Industry, "index">[] = [
       "High-bay and narrow aisle storage",
       "Heat in service bays",
     ],
-    disciplines: ["dust-extraction", "air-conditioning-ventilation", "racking-material-handling"],
+    disciplines: ["dust-extraction", "air-conditioning-ventilation", "hvls-fans"],
     clients: ["DOK Solutions Lanka Pvt Ltd"],
-    image: "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=1280",
+    image:
+      "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=1280",
   },
   {
     slug: "conglomerates",
@@ -198,9 +203,10 @@ const raw: Omit<Industry, "index">[] = [
       "Centralised monitoring",
       "Phased delivery",
     ],
-    disciplines: ["air-conditioning-ventilation", "bms-air-quality", "racking-material-handling"],
+    disciplines: ["air-conditioning-ventilation", "kitchen-esp", "hvls-fans"],
     clients: [],
-    image: "https://images.pexels.com/photos/8782684/pexels-photo-8782684.jpeg?auto=compress&cs=tinysrgb&w=1280",
+    image:
+      "https://images.pexels.com/photos/8782684/pexels-photo-8782684.jpeg?auto=compress&cs=tinysrgb&w=1280",
   },
 ];
 

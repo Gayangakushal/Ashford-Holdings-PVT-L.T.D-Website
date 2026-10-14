@@ -1,5 +1,6 @@
 import { TextLink } from "@/components/site/Buttons";
 import { RackingDrawing } from "@/components/site/RackingDrawing";
+import { HvlsAirflow } from "@/components/site/HvlsAirflow";
 import { Reveal } from "@/components/site/Reveal";
 import type { Discipline } from "@/data/disciplines";
 import { cn } from "@/lib/utils";
@@ -15,7 +16,9 @@ export function SolutionFeature({
   return (
     <article className={cn("feature", flip && "is-flip")} aria-labelledby={`feature-${d.slug}`}>
       <Reveal as="figure" variant="clip" className="feature-media">
-        {d.image ? (
+        {d.slug === "hvls-fans" ? (
+          <HvlsAirflow compact />
+        ) : d.image ? (
           <img src={d.image} alt={d.imageAlt} loading="lazy" decoding="async" />
         ) : (
           <RackingDrawing label="Racking elevation" />

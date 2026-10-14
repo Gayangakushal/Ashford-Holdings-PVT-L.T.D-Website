@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
     seo({
       title: "Ashford Holdings PVT L.T.D | HVAC, Ventilation & Air Engineering in Sri Lanka",
       description:
-        "Ashford Holdings PVT L.T.D engineers ventilation, air conditioning, air purification, BMS, fire & gas suppression, dust extraction and racking systems for industrial and commercial facilities in Sri Lanka.",
+        "Ashford Holdings PVT L.T.D engineers ventilation, air conditioning, air purification, Kitchen ESP, dust extraction and HVLS fans for industrial and commercial facilities in Sri Lanka.",
       path: "/",
     }),
   component: Home,
@@ -30,8 +30,6 @@ export const Route = createFileRoute("/")({
 
 const featured: { slug: string; size: "lg" | "md" | "wide" }[] = [
   { slug: "variosystems-fume-extraction", size: "lg" },
-  { slug: "ae-bangladesh-factory-upgrade", size: "md" },
-  { slug: "dok-narrow-aisle-racking", size: "md" },
   { slug: "cbl-factory-ventilation", size: "wide" },
 ];
 

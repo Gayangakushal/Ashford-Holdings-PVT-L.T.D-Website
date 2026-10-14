@@ -1,6 +1,6 @@
 /**
- * Real engineering photography supplied with this project. No unrelated company
- * profile images or competitor material are referenced here.
+ * Supplied installation photos and manufacturer equipment-family imagery.
+ * Sources for corrected equipment visuals are recorded in assets/equipment/SOURCES.json.
  */
 export const media = {
   extraction: "/assets/hvac/extraction-installation.jpg",
@@ -18,6 +18,17 @@ export const media = {
   redDuct: "/assets/hvac/red-ducting.jpg",
   ductComponent: "/assets/hvac/duct-component.jpg",
   wetScrubber: "/assets/hvac/wet-scrubber-unit.jpg",
+  kitchenEsp: "/assets/equipment/kitchen-esp.jpg",
+  kitchenCanopy: "/assets/equipment/kitchen-canopy.jpg",
+  airPurifier: "/assets/equipment/air-purifier.jpg",
+  mixedFlow: "/assets/equipment/inline-mixed-flow-fan.jpg",
+  inlineCentrifugal: "/assets/equipment/centrifugal-inline-fan.jpg",
+  ductAxial: "/assets/equipment/duct-axial-fan.jpg",
+  coolingTower: "/assets/equipment/cooling-tower.jpg",
+  atexFan: "/assets/equipment/atex-ventilation-fan.jpg",
+  corrosiveFan: "/assets/equipment/corrosive-environment-fan.jpg",
+  insulatedDuct: "/assets/equipment/pre-insulated-duct.jpg",
+  industrialCooling: "/assets/equipment/industrial-air-conditioning.jpg",
 } as const;
 
 export const solutionImages: Record<string, string> = {
@@ -25,25 +36,25 @@ export const solutionImages: Record<string, string> = {
   "ventilation-systems": media.ducts,
   "hot-air-extraction": media.extraction,
   "fresh-air-inflow": media.ducts2,
-  "industrial-air-conditioning": media.heatExchanger,
-  "industrial-kitchen-canopy": media.redDuct,
-  "industrial-kitchen-esp": media.wetScrubber,
+  "industrial-air-conditioning": media.industrialCooling,
+  "industrial-kitchen-canopy": media.kitchenCanopy,
+  "industrial-kitchen-esp": media.kitchenEsp,
   "gi-ducting": media.ducts,
-  "pir-ducting": media.ducts2,
-  "cooling-towers": media.cooling,
+  "pir-ducting": media.insulatedDuct,
+  "cooling-towers": media.coolingTower,
   "pulse-jet-dust-collectors": media.dust,
   "industrial-centrifugal-fans": media.stainlessFans,
   "acoustic-cabinet-fans": media.cabinetFan,
-  "cylindrical-axial-fans": media.centrifugal,
+  "cylindrical-axial-fans": media.ductAxial,
 };
 
 export const productImages: Record<string, string> = {
-  "inline-mixed-flow-fans": media.ductComponent,
-  "centrifugal-inline-fans": media.centrifugal,
-  "duct-axial-fans": media.centrifugal,
-  "hvls-fans": media.ducts,
+  "inline-mixed-flow-fans": media.mixedFlow,
+  "centrifugal-inline-fans": media.inlineCentrifugal,
+  "duct-axial-fans": media.ductAxial,
+  "hvls-fans": "/assets/hvac/hvls-fan-interior.jpg",
   "evaporative-cooling": media.cooling,
-  "cooling-towers": media.cooling,
-  "atex-ventilation": media.stainlessFans,
-  "corrosive-environment-fans": media.fanPipework,
+  "cooling-towers": media.coolingTower,
+  "atex-ventilation": media.atexFan,
+  "corrosive-environment-fans": media.corrosiveFan,
 };

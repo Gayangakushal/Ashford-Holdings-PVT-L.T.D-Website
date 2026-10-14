@@ -5,9 +5,15 @@ import { CTA } from "@/components/site/CTA";
 import { PageHero } from "@/components/site/PageHero";
 import { ProjectCard } from "@/components/site/ProjectCard";
 import { RackingDrawing } from "@/components/site/RackingDrawing";
+import { HvlsAirflow } from "@/components/site/HvlsAirflow";
 import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading, SectionLabel } from "@/components/site/SectionLabel";
-import { disciplineBySlug, disciplineForSystem, type Discipline } from "@/data/disciplines";
+import {
+  disciplines,
+  disciplineBySlug,
+  disciplineForSystem,
+  type Discipline,
+} from "@/data/disciplines";
 import { feedback } from "@/data/feedback";
 import { solutionImages } from "@/data/media";
 import { products } from "@/data/products";
@@ -61,7 +67,7 @@ function DisciplinePage({ d }: { d: Discipline }) {
   return (
     <main id="main">
       <PageHero
-        eyebrow={`Solution ${d.index} / 06`}
+        eyebrow={`Solution ${d.index} / ${String(disciplines.length).padStart(2, "0")}`}
         title={d.title}
         intro={d.description}
         image={d.image || undefined}
@@ -96,6 +102,11 @@ function DisciplinePage({ d }: { d: Discipline }) {
             </div>
           </div>
         </div>
+        {d.slug === "hvls-fans" && (
+          <div className="container-x hvls-airflow-detail">
+            <HvlsAirflow />
+          </div>
+        )}
         {d.schematic === "racking" ? (
           <div className="container-x mt-16">
             <Reveal
@@ -150,7 +161,7 @@ function DisciplinePage({ d }: { d: Discipline }) {
                 <blockquote>
                   <p>“{quotes[0].quote}”</p>
                 </blockquote>
-                <figcaption className="t-tech mt-5">— {quotes[0].client}</figcaption>
+                <figcaption className="t-tech mt-5">, {quotes[0].client}</figcaption>
               </figure>
             ) : null}
           </div>

@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { Arrow } from "@/components/site/Buttons";
+import { Arrow, ButtonLink } from "@/components/site/Buttons";
 import { SectionLabel } from "@/components/site/SectionLabel";
 import { disciplines } from "@/data/disciplines";
 import { addressOneLine, site } from "@/data/site";
@@ -18,12 +18,12 @@ export function ContactForm() {
     if (!form.reportValidity()) return;
     const f = new FormData(form);
     const type = String(f.get("type") || "General enquiry");
-    const subject = `Project enquiry — ${type}`;
+    const subject = `Project enquiry, ${type}`;
     const body = [
       `Name: ${f.get("name")}`,
-      `Company: ${f.get("company") || "-"}`,
+      `Company: ${f.get("company") || "Not provided"}`,
       `Email: ${f.get("email")}`,
-      `Phone: ${f.get("phone") || "-"}`,
+      `Phone: ${f.get("phone") || "Not provided"}`,
       `Project type: ${type}`,
       "",
       String(f.get("message") || ""),
@@ -126,6 +126,16 @@ export function ContactDetails() {
           <a href={site.whatsappHref} target="_blank" rel="noopener noreferrer">
             {site.whatsapp}
           </a>
+          <div className="mt-4">
+            <ButtonLink
+              href={site.whatsappHref}
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Chat on WhatsApp
+            </ButtonLink>
+          </div>
         </dd>
       </div>
       <div>

@@ -2,6 +2,7 @@
 @source "../src";
 @import "tw-animate-css";
 @import "./components/site/site.css";
+@import "./components/site/hvls-airflow.css";
 
 @custom-variant dark (&:is(.dark *));
 

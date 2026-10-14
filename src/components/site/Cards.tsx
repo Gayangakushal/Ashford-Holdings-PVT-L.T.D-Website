@@ -9,7 +9,7 @@ export function SolutionCard({ solution }: { solution: Solution }) {
   return (
     <AppLink href={`/solutions/${solution.slug}`} className="sys-card">
       <span className="sys-card-media">
-        {image ? <img src={image} alt="" loading="lazy" decoding="async" /> : null}
+        {image ? <img src={image} alt={solution.title} loading="lazy" decoding="async" /> : null}
       </span>
       <span className="sys-card-body">
         <span className="t-tech">{solution.category}</span>
@@ -25,11 +25,11 @@ export function SolutionCard({ solution }: { solution: Solution }) {
 
 export function ProductCard({ product }: { product: Product }) {
   return (
-    <AppLink href={`/products/${product.slug}`} className="sys-card">
+    <AppLink href={`/products/${product.slug}`} className="sys-card equipment-card">
       <span className="sys-card-media">
         <img
-          src={productImages[product.slug] ?? "/assets/hvac/centrifugal-fans.jpg"}
-          alt=""
+          src={productImages[product.slug]}
+          alt={`${product.name}, representative equipment image`}
           loading="lazy"
           decoding="async"
         />

@@ -17,7 +17,7 @@ export const Route = createFileRoute("/projects/$slug")({
     const p = projectBySlug(params.slug);
     if (!p) return { meta: [{ title: "Project not found | Ashford Holdings PVT L.T.D" }] };
     return seo({
-      title: `${p.title} — ${p.client}`,
+      title: `${p.title}, ${p.client}`,
       description: p.summary,
       path: `/projects/${p.slug}`,
       image: p.image?.src,
@@ -38,7 +38,7 @@ function ProjectDetail() {
   return (
     <main id="main">
       <PageHero
-        eyebrow={`Project P—${p.index}`}
+        eyebrow={`Project P, ${p.index}`}
         title={p.title}
         intro={p.summary}
         crumbs={[{ label: "Projects", href: "/projects" }, { label: p.client }]}
@@ -60,11 +60,11 @@ function ProjectDetail() {
           >
             <ProjectVisual project={p} />
             <figcaption className="feature-media-tag">
-              <span>P—{p.index}</span>
+              <span>P, {p.index}</span>
               <span>
                 {p.visual === "photo"
-                  ? "Representative image — not the client site"
-                  : "Engineering drawing — illustrative"}
+                  ? "Representative image, not the client site"
+                  : "Engineering drawing, illustrative"}
               </span>
             </figcaption>
           </Reveal>

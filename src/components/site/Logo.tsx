@@ -15,7 +15,7 @@ export function Logo({
   return (
     <Link
       to="/"
-      aria-label={`${site.name} — home`}
+      aria-label={`${site.name}, home`}
       className={cn("logo-link", className)}
       onClick={onClick}
     >

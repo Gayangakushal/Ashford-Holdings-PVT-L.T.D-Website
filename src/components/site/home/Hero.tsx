@@ -111,7 +111,7 @@ export function Hero() {
         </h1>
         <div className="hero-bottom">
           <p className="hero-lede">
-            Ventilation, air conditioning, purification, BMS and fire &amp; gas suppression —
+            Ventilation, air conditioning, purification, Kitchen ESP, dust extraction and HVLS fans,
             designed, supplied and installed for factories, commercial buildings and industrial
             facilities across Sri Lanka.
           </p>

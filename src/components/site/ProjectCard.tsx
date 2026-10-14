@@ -13,7 +13,7 @@ export function ProjectVisual({
   if (project.visual === "racking" || !project.image) {
     const height = project.scope.find((s) => /\d+\s*ft/i.test(s))?.match(/(\d+\s*ft)/i)?.[1];
     return (
-      <RackingDrawing className={className} height={height} label={`${project.client} — storage`} />
+      <RackingDrawing className={className} height={height} label={`${project.client}, storage`} />
     );
   }
   return (
@@ -47,7 +47,7 @@ export function ProjectCard({
         </div>
         <div className="project-card-body">
           <div className="project-card-top">
-            <span className="project-card-index">P—{project.index}</span>
+            <span className="project-card-index">P, {project.index}</span>
             <span className="t-tech">{project.discipline}</span>
           </div>
           <h3 className="project-card-title">{project.title}</h3>

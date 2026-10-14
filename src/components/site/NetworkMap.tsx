@@ -8,7 +8,13 @@ export function NetworkMap({ index = "08" }: { index?: string }) {
           index={index}
           label="Our Sri Lanka network"
           id="network-title"
-          title={<>Working with businesses<br />across Sri Lanka.</>}
+          title={
+            <>
+              Working with businesses
+              <br />
+              across Sri Lanka.
+            </>
+          }
           intro="We work with the Sri Lankan operations of local and international brands, delivering engineering solutions for factories, hospitals, hotels, retail spaces and commercial facilities."
         />
       </div>

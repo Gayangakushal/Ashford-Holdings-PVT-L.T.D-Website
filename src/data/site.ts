@@ -17,7 +17,7 @@ export const site = {
   tagline: "Engineering Air. Enhancing Lives.",
   discipline: "Air & Environmental Engineering",
   shortDescription:
-    "Air and environmental engineering for industrial, commercial and infrastructure facilities in Sri Lanka — ventilation, air conditioning, purification, BMS, fire & gas suppression, dust extraction and material handling.",
+    "Air and environmental engineering for industrial, commercial and infrastructure facilities in Sri Lanka, ventilation, air conditioning, purification, Kitchen ESP, dust extraction and HVLS fans.",
   /** [USER] Contact details from the supplied Ashford screenshot; truncated postal code omitted. */
   phone: "+94 76 666 8859",
   phoneHref: "tel:+94766668859",
@@ -75,7 +75,7 @@ export const leadership = [
     name: "Suren Chandraratna",
     role: "Managing Director",
     credentials: "MBA UK, Dip. BM, F.I.M.S. UK",
-    bio: "A management professional with more than 18 years in the industry, spanning sales, marketing, engineering, production and operations. Ashford Holdings PVT L.T.D credits him with pioneering evaporative-cooling adoption locally and contributing to large-scale ventilation, cooling and racking projects.",
+    bio: "A management professional with more than 18 years in the industry, spanning sales, marketing, engineering, production and operations. Ashford Holdings PVT L.T.D credits him with pioneering evaporative-cooling adoption locally and contributing to large-scale ventilation, cooling projects.",
   },
   {
     name: "Rohan Rajaratnam",
@@ -97,7 +97,7 @@ export const leadership = [
   },
   {
     name: "Ravindra Alwis",
-    role: "General Manager - Sales",
+    role: "General Manager, Sales",
     credentials: "B.Com Special",
     bio: "A ventilation and industrial-cooling specialist with extensive experience in applications engineering, factory ventilation, special-purpose air movement and energy management.",
   },

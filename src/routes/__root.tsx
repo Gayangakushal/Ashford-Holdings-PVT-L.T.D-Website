@@ -13,6 +13,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { ButtonLink } from "@/components/site/Buttons";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { WhatsAppContact } from "@/components/site/WhatsAppContact";
 import { BrandLoader } from "@/components/site/BrandLoader";
 import { CookieConsent } from "@/components/site/CookieConsent";
 import { SITE_URL, site } from "@/data/site";
@@ -38,7 +39,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: { error: unknown; reset: () => void }) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
@@ -93,10 +94,9 @@ const organizationLd = {
     "Industrial ventilation",
     "Air conditioning",
     "Air purification",
-    "Building management systems",
-    "Fire and gas suppression",
+    "Kitchen exhaust filtration",
     "Dust extraction",
-    "Racking and material handling",
+    "HVLS fans",
   ],
 };
 
@@ -162,6 +162,7 @@ function RootComponent() {
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
       <Footer />
+      {introFinished && <WhatsAppContact />}
     </QueryClientProvider>
   );
 }

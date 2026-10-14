@@ -69,7 +69,11 @@ export function TestimonialSlider({
               if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false);
             }}
           >
-            <div className="client-feedback-cards" aria-live={autoplay ? "off" : "polite"} aria-atomic="true">
+            <div
+              className="client-feedback-cards"
+              aria-live={autoplay ? "off" : "polite"}
+              aria-atomic="true"
+            >
               {visible.map((item, position) => (
                 <figure
                   key={`${active}-${item.client}`}
@@ -78,18 +82,23 @@ export function TestimonialSlider({
                   aria-label={`${((active + position) % total) + 1} of ${total}`}
                 >
                   <blockquote>
+                    {item.sample && <span className="t-tech mb-3 block">Draft feedback</span>}
                     <p>{item.quote}</p>
                   </blockquote>
                   <figcaption>
                     <span className="client-review-logo">
-                      <img
-                        src={item.logo}
-                        alt=""
-                        width={96}
-                        height={96}
-                        loading="lazy"
-                        decoding="async"
-                      />
+                      {item.logo ? (
+                        <img
+                          src={item.logo}
+                          alt=""
+                          width={96}
+                          height={96}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      ) : (
+                        <span className="text-sm font-semibold text-void">{item.client}</span>
+                      )}
                     </span>
                     <span className="client-review-name">{item.client}</span>
                   </figcaption>
@@ -99,9 +108,14 @@ export function TestimonialSlider({
             {total > 1 && (
               <div className="client-feedback-navigation">
                 {!reducedMotion && (
-                  <button type="button" className="client-feedback-autoplay"
+                  <button
+                    type="button"
+                    className="client-feedback-autoplay"
                     onClick={() => setPaused((current) => !current)}
-                    aria-label={paused ? "Start automatic feedback slides" : "Pause automatic feedback slides"}>
+                    aria-label={
+                      paused ? "Start automatic feedback slides" : "Pause automatic feedback slides"
+                    }
+                  >
                     {paused ? "Play" : "Pause"}
                   </button>
                 )}

@@ -9,7 +9,7 @@ import { seo } from "@/lib/seo";
 export const Route = createFileRoute("/products/")({
   head: () =>
     seo({
-      title: "Equipment — Fans, AHUs, Cooling, ESP, Ducting & Dampers",
+      title: "Equipment, Fans, AHUs, Cooling, ESP, Ducting & Dampers",
       description:
         "Industrial fans, air handling and fan coil units, evaporative coolers, cooling towers, electrostatic precipitators, kitchen canopies, dust collectors, ducting, dampers and air terminals.",
       path: "/products",
@@ -30,7 +30,7 @@ function Products() {
             <span className="text-steel">for the duty.</span>
           </>
         }
-        intro="Fans, air handling, cooling, filtration, ducting and air distribution components from the supplied product range — specified against calculated airflow, pressure and temperature."
+        intro="Fans, air handling, cooling, filtration, ducting and air distribution components from the supplied product range, specified against calculated airflow, pressure and temperature."
         image="/assets/hvac/stainless-centrifugal-fans.jpg"
         crumbs={[{ label: "Equipment" }]}
       />

@@ -107,7 +107,7 @@ export const products: Product[] = [
       "Energy-conscious comfort support",
     ],
     applications: ["Warehouses", "Manufacturing plants", "Cold storage", "Large halls"],
-    technical: [{ label: "Typical diameter", value: "7–24 ft (published range)" }],
+    technical: [{ label: "Typical diameter", value: "7 to 24 ft (published range)" }],
     relatedSolution: "ventilation-systems",
   },
   {
@@ -152,7 +152,7 @@ export const products: Product[] = [
       "Commercial complexes",
       "Water-cooled chiller plants",
     ],
-    technical: [{ label: "Published capacity", value: "50 TR – 2000+ TR" }],
+    technical: [{ label: "Published capacity", value: "50 TR to 2000+ TR" }],
     relatedSolution: "cooling-towers",
   },
   {
