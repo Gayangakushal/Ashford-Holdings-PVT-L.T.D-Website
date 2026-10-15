@@ -2632,7 +2632,7 @@
   transform: scale(1.05);
   filter: grayscale(0) brightness(0.92);
 }
-.equipment-card .sys-card-media { background: #f5f6f7; }
+.equipment-card .sys-card-media { background: var(--graphite); }
 .equipment-card .sys-card-media img { object-fit: contain; filter: none; }
 .equipment-card:hover .sys-card-media img { filter: none; transform: scale(1.02); }
 .sys-card-body {
