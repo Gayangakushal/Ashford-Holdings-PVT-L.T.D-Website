@@ -66,6 +66,58 @@ function About() {
         </div>
       </section>
 
+      <section className="section-y border-t border-line" aria-labelledby="leadership-message-title">
+        <div className="container-x">
+          <SectionLabel>A message from Gayan Wickramarathne</SectionLabel>
+          <article className="about-message mt-12">
+            <div className="about-message-portrait">
+              <img
+                src="/assets/team/gayan-wickramarathne.jpg"
+                alt="Gayan Wickramarathne"
+                width={1687}
+                height={2160}
+                loading="lazy"
+              />
+              <div className="about-message-caption">
+                <p className="eyebrow">Ashford Holdings PVT L.T.D</p>
+                <p className="t-h3 mt-3">Gayan Wickramarathne</p>
+              </div>
+            </div>
+            <div className="about-message-copy">
+              <span className="about-message-mark" aria-hidden="true">“</span>
+              <p className="eyebrow">Our commitment to you</p>
+              <h2 id="leadership-message-title" className="t-h2 mt-6">
+                Better air.<br />Lasting relationships.
+              </h2>
+              <p className="t-lead mt-8">
+                At Ashford Holdings, we believe good engineering begins with understanding the
+                people and spaces we serve.
+              </p>
+              <div className="about-message-body t-body mt-6">
+                <p>
+                  Every workplace has its own challenges. Our approach brings together careful
+                  planning, practical solutions and attention to detail to create environments
+                  where people can work comfortably and confidently.
+                </p>
+                <p>
+                  From ventilation and cooling to air purification and extraction, we focus on
+                  solutions that suit each client's needs. Clear communication, responsible
+                  workmanship and dependable support guide the way we work.
+                </p>
+                <p>
+                  Thank you for considering Ashford Holdings. We look forward to working with
+                  you and building a lasting relationship based on trust and care.
+                </p>
+              </div>
+              <div className="about-message-signoff">
+                <p className="t-h3">Gayan Wickramarathne</p>
+                <p className="t-small mt-2">Ashford Holdings PVT L.T.D</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section className="section-y border-t border-line bg-carbon" aria-labelledby="vision-title">
         <div className="container-x">
           <SectionLabel index="02">Vision · Mission · Values</SectionLabel>

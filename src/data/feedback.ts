@@ -17,12 +17,11 @@ export type Feedback = {
 
 export const feedback: Feedback[] = [
   {
-    client: "Ceylon Biscuits Limited (CBL)",
+    client: "Farmking",
     quote:
       "For over 15 years, we have relied on their expertise to develop tailored ventilation systems across our factories. Their focus on energy efficiency and innovation continues to set new industry benchmarks.",
-    logo: "/assets/clients/client-63.jpeg",
+    logo: "/assets/clients/client-23.jpeg",
     discipline: "Ventilation",
-    project: "cbl-factory-ventilation",
   },
   {
     client: "Variosystems Pvt Ltd",
