@@ -9,7 +9,14 @@ export function SolutionCard({ solution }: { solution: Solution }) {
   return (
     <AppLink href={`/solutions/${solution.slug}`} className="sys-card">
       <span className="sys-card-media">
-        {image ? <img src={image} alt={solution.title} loading="lazy" decoding="async" /> : null}
+        {image ? (
+          <img
+            src={image}
+            alt={solution.imageAlt ?? solution.title}
+            loading="lazy"
+            decoding="async"
+          />
+        ) : null}
       </span>
       <span className="sys-card-body">
         <span className="t-tech">{solution.category}</span>

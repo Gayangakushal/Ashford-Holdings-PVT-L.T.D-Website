@@ -1,0 +1,167 @@
+{
+  "checkedOn": "2026-10-20",
+  "note": "Representative equipment imagery, not claims of Ashford installations or exact supplied models. Only explicitly public-domain / CC0 images installed. Product images and other site imagery unchanged.",
+  "assets": [
+    {
+      "slug": "industrial-air-conditioning",
+      "original": "air-conditioning.jpg",
+      "title": "Rooftop Packaged Units.JPG",
+      "author": "P199",
+      "license": "Public domain (worldwide author dedication)",
+      "alt": "Rooftop packaged air conditioning unit with condenser coil and fresh air intake",
+      "source": "https://commons.wikimedia.org/wiki/File:Rooftop_Packaged_Units.JPG",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Rooftop_Packaged_Units.JPG",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+      "licenseEvidence": "Public domain",
+      "originalDimensions": {
+        "width": 1471,
+        "height": 974
+      },
+      "path": "/assets/services/industrial-air-conditioning.webp",
+      "optimizedDimensions": {
+        "width": 1471,
+        "height": 974
+      },
+      "originalBytes": 382094,
+      "optimizedBytes": 216336,
+      "changes": "Proportional downsize without enlargement; WebP quality 84%; no content edits or distortion."
+    },
+    {
+      "slug": "cooling-towers",
+      "original": "cooling-tower.png",
+      "title": "Industrial water cooling tower.png",
+      "author": "Coolingtowerr",
+      "license": "CC0 1.0",
+      "alt": "Industrial cooling tower with louvred air inlet, service ladder and circulation pipework",
+      "source": "https://commons.wikimedia.org/wiki/File:Industrial_water_cooling_tower.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Industrial_water_cooling_tower.png",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "licenseEvidence": "CC0",
+      "originalDimensions": {
+        "width": 1086,
+        "height": 1448
+      },
+      "path": "/assets/services/cooling-towers.webp",
+      "optimizedDimensions": {
+        "width": 1086,
+        "height": 1448
+      },
+      "originalBytes": 2340486,
+      "optimizedBytes": 187032,
+      "changes": "Proportional downsize without enlargement; WebP quality 84%; no content edits or distortion."
+    },
+    {
+      "slug": "hot-air-extraction",
+      "original": "air-intake.jpg",
+      "title": "Air Handler Unit aanzuiging.JPG",
+      "author": "Alf van Beem",
+      "license": "CC0 1.0",
+      "alt": "Large centrifugal ventilation fan with motor, inlet grille and connected ductwork",
+      "source": "https://commons.wikimedia.org/wiki/File:Air_Handler_Unit_aanzuiging.JPG",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Air_Handler_Unit_aanzuiging.JPG",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "licenseEvidence": "CC0",
+      "originalDimensions": {
+        "width": 4608,
+        "height": 3456
+      },
+      "path": "/assets/services/hot-air-extraction.webp",
+      "optimizedDimensions": {
+        "width": 1600,
+        "height": 1200
+      },
+      "originalBytes": 3090263,
+      "optimizedBytes": 164132,
+      "changes": "Proportional downsize without enlargement; WebP quality 84%; no content edits or distortion."
+    },
+    {
+      "slug": "fresh-air-inflow",
+      "original": "air-handler.jpg",
+      "title": "HVAC Air Handler Unit, pic1.JPG",
+      "author": "Alf van Beem",
+      "license": "CC0 1.0",
+      "alt": "Industrial air handling unit with inspection panels, controls and insulated ventilation ducts",
+      "source": "https://commons.wikimedia.org/wiki/File:HVAC_Air_Handler_Unit,_pic1.JPG",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/HVAC_Air_Handler_Unit%2C_pic1.JPG",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "licenseEvidence": "CC0",
+      "originalDimensions": {
+        "width": 4608,
+        "height": 3456
+      },
+      "path": "/assets/services/fresh-air-inflow.webp",
+      "optimizedDimensions": {
+        "width": 1600,
+        "height": 1200
+      },
+      "originalBytes": 3505137,
+      "optimizedBytes": 154926,
+      "changes": "Proportional downsize without enlargement; WebP quality 84%; no content edits or distortion."
+    },
+    {
+      "slug": "pulse-jet-dust-collectors",
+      "original": "baghouse.jpg",
+      "title": "Bag filter.jpg",
+      "author": "Tetris L",
+      "license": "Public domain (worldwide author dedication)",
+      "alt": "Rows of fabric filter bags inside an industrial baghouse dust collector",
+      "source": "https://commons.wikimedia.org/wiki/File:Bag_filter.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Bag_filter.jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+      "licenseEvidence": "Public domain",
+      "originalDimensions": {
+        "width": 2048,
+        "height": 1536
+      },
+      "path": "/assets/services/pulse-jet-dust-collectors.webp",
+      "optimizedDimensions": {
+        "width": 1600,
+        "height": 1200
+      },
+      "originalBytes": 659810,
+      "optimizedBytes": 96176,
+      "changes": "Proportional downsize without enlargement; WebP quality 84%; no content edits or distortion."
+    }
+  ],
+  "rejectedReferenceImages": [
+    {
+      "page": "https://areacooling.com/",
+      "image": "https://areacooling.com/wp-content/uploads/2022/10/2-2-1200x800.jpg",
+      "service": "Industrial cooling / refrigeration reference",
+      "reason": "No reuse permission. AREA legal notice section 2 requires prior written authorization. Refrigeration application photograph is also less specific than a packaged AC unit.",
+      "terms": "https://areacooling.com/legal-notice/",
+      "httpStatus": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "page": "https://areacooling.com/",
+      "image": "https://areacooling.com/wp-content/uploads/2022/04/EC-fan-500x500.png",
+      "service": "Ventilation fan reference",
+      "reason": "No reuse permission. AREA legal notice section 2 requires prior written authorization.",
+      "terms": "https://areacooling.com/legal-notice/",
+      "httpStatus": 200,
+      "contentType": "image/png"
+    },
+    {
+      "page": "https://www.ekg.com.my/services/sid/32967/airconditioning-mechanical-ventilation-and-refrigeration-acmvr/",
+      "image": "https://cdn1.npcdn.net/images/1721094455_4b26dbcb6be6b1a3fe763d48148aaca0.webp?md5id=819ba59c63730c44639f973a71652916&new_width=1000&new_height=1000&size=max&type=3&w=-62170008925&off_wm=1&from=jpeg",
+      "service": "Air conditioning and mechanical ventilation reference",
+      "reason": "Publicly accessible image, but no licence or authorization for third-party commercial reuse found on the inspected service page or site privacy policy.",
+      "httpStatus": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "page": "https://www.ekg.com.my/showproducts/productid/6305219/cooling-tower-servicing-checklist/",
+      "image": "https://cdn1.npcdn.net/images/7feaccaa54395064e8da5ada9ca33ac2_1766556557.webp?md5id=819ba59c63730c44639f973a71652916&new_width=1000&new_height=1000&size=max&w=-62170008925&from=jpeg&type=9",
+      "service": "Cooling tower reference",
+      "reason": "Publicly accessible image, but no licence or authorization for third-party commercial reuse found on the inspected product page or site privacy policy.",
+      "httpStatus": 200,
+      "contentType": "image/webp"
+    }
+  ],
+  "referenceInspection": {
+    "area": "Inspected homepage, HVAC/refrigeration equipment imagery and legal notice. No suitable baghouse or cooling tower photo identified on inspected pages.",
+    "ekg": "Inspected homepage, ACMV-R service page, cooling tower product page and privacy policy. No pulse jet baghouse photo identified on inspected pages. Homepage failed through web reader but returned HTTP 200 through direct fetch.",
+    "baghouse": "Selected public-domain fabric filter-bag detail. CC0 Tpclean candidate was inspected and rejected as a cartridge collector, not a baghouse."
+  }
+}

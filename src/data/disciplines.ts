@@ -37,7 +37,8 @@ export const disciplines: Discipline[] = [
     capabilities: [
       "Industrial, commercial and residential air conditioning",
       "Mechanical ventilation, supply and extract",
-      "Hot air extraction and fresh air supply",
+      "Hot air extraction and fresh air inflow ventilation systems",
+      "Industrial cooling tower systems",
       "HVLS fans and evaporative cooling",
       "GI and pre-insulated ductwork",
     ],
@@ -124,7 +125,7 @@ export const disciplines: Discipline[] = [
     statement: "Capture at source, convey cleanly, discharge within limits.",
     applications: ["Textile", "Woodworking", "Food processing", "Heavy manufacturing"],
     capabilities: [
-      "Pulse-jet dust collection",
+      "Pulse jet baghouse dust collection and filtration",
       "Fume and process extraction",
       "Industrial centrifugal fans",
       "Extraction ductwork and hoods",

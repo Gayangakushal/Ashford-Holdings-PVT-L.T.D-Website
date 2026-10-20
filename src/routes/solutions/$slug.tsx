@@ -207,6 +207,7 @@ function SystemPage({ s }: { s: Solution }) {
         title={s.title}
         intro={s.summary}
         image={solutionImages[s.slug]}
+        imageAlt={s.imageAlt ?? s.title}
         crumbs={[
           { label: "Solutions", href: "/solutions" },
           ...(parent ? [{ label: parent.short, href: `/solutions/${parent.slug}` }] : []),

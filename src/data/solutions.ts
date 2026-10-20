@@ -5,6 +5,7 @@ export type Solution = {
   navTitle: string;
   category: "HVAC" | "Ventilation" | "Kitchen" | "Ducting" | "Dust Control" | "Cooling" | "Fans";
   summary: string;
+  imageAlt?: string;
   overview: string[];
   applications: string[];
   how: { title: string; text: string }[];
@@ -143,7 +144,8 @@ export const solutions: Solution[] = [
     navTitle: "Hot Air Extraction",
     category: "Ventilation",
     summary:
-      "High-temperature extraction systems that remove accumulated heat from roof space, process areas and equipment enclosures.",
+      "Industrial hot air extraction paired with fresh air inflow ventilation to remove accumulated heat from roof spaces, process areas and equipment enclosures.",
+    imageAlt: "Large centrifugal ventilation fan with motor, inlet grille and connected ductwork",
     overview: [
       "Heat rises and collects. Without a designed extraction path it builds under the roof and radiates back into the working area, raising ambient temperature and loading any cooling system that follows it.",
       "We design extraction at the point where heat collects, using high-temperature rated fans and correctly positioned intake and discharge points so hot air leaves the building rather than recirculating.",
@@ -204,7 +206,9 @@ export const solutions: Solution[] = [
     navTitle: "Fresh Air Supply Systems",
     category: "Ventilation",
     summary:
-      "Filtered fresh air and make-up air systems that replace extracted air and maintain indoor air quality.",
+      "Filtered fresh air inflow and supply ventilation systems that replace extracted air, balance industrial airflow and maintain indoor air quality.",
+    imageAlt:
+      "Industrial air handling unit with inspection panels, controls and insulated ventilation ducts",
     overview: [
       "Every extraction system needs a matching supply. Where make-up air is not provided the building goes negative, extraction rates drop and air is drawn in through doors and gaps, carrying dust and heat with it.",
       "Fresh air systems introduce filtered outside air at the right volume and position, tempered where required, so extraction performs as designed and occupants get the air changes they need.",
@@ -261,11 +265,12 @@ export const solutions: Solution[] = [
   {
     slug: "industrial-air-conditioning",
     index: "05",
-    title: "Industrial Air Conditioning",
+    title: "Industrial Air Conditioning Systems",
     navTitle: "Industrial Air Conditioning",
     category: "HVAC",
     summary:
-      "Air-conditioning for production, process and large commercial spaces where standard comfort cooling is not sufficient.",
+      "Industrial air conditioning solutions for production, process and large commercial spaces, with cooling capacity and airflow matched to operating conditions.",
+    imageAlt: "Rooftop packaged air conditioning unit with condenser coil and fresh air intake",
     overview: [
       "Industrial spaces carry heat loads that domestic and light commercial equipment is not built for: process heat, high ceilings, large door openings and continuous running hours.",
       "We select and install air-conditioning plant sized for those conditions, packaged units, ducted systems, air handling and fan coil units, with the air distribution designed alongside it.",
@@ -563,11 +568,13 @@ export const solutions: Solution[] = [
   {
     slug: "cooling-towers",
     index: "10",
-    title: "Cooling Towers",
+    title: "Industrial Cooling Towers",
     navTitle: "Cooling Towers",
     category: "Cooling",
     summary:
-      "Cooling tower supply and installation for chiller plant and process cooling, including pipework interface and commissioning.",
+      "Industrial cooling tower systems for chiller plant and process cooling applications, including selection, installation, pipework interface and commissioning.",
+    imageAlt:
+      "Industrial cooling tower with louvred air inlet, service ladder and circulation pipework",
     overview: [
       "A cooling tower rejects heat from chiller condensers or process equipment to atmosphere. Its performance depends on correct selection against design wet bulb, water flow rate and approach temperature.",
       "We handle selection, installation, pipework interface and commissioning, along with the structural and airflow clearances the tower needs to perform.",
@@ -624,11 +631,12 @@ export const solutions: Solution[] = [
   {
     slug: "pulse-jet-dust-collectors",
     index: "11",
-    title: "Pulse Jet Dust Collector Systems",
-    navTitle: "Dust Collector Systems",
+    title: "Pulse Jet Baghouse Dust Collectors",
+    navTitle: "Pulse Jet Baghouse Dust Collectors",
     category: "Dust Control",
     summary:
-      "Industrial dust and fume extraction with pulse jet filter cleaning, from capture hood through ductwork to clean air discharge.",
+      "Industrial dust collection and air filtration with pulse jet baghouse systems, from capture hoods and extraction ductwork to filtered air discharge.",
+    imageAlt: "Rows of fabric filter bags inside an industrial baghouse dust collector",
     overview: [
       "A dust collection system is a chain: capture at the source, transport velocity in the ductwork, filtration, fan and discharge. A weak link anywhere and dust settles in the duct or escapes at the hood.",
       "Pulse jet collectors clean their filter elements with short bursts of compressed air while running, which keeps pressure drop stable and allows continuous operation on heavy dust loads.",
@@ -651,7 +659,7 @@ export const solutions: Solution[] = [
       },
       {
         title: "Filtration",
-        text: "Dust separates on filter bags or cartridges inside the collector.",
+        text: "Dust is captured on fabric filter bags inside the baghouse collector.",
       },
       {
         title: "Pulse cleaning & discharge",
@@ -665,7 +673,7 @@ export const solutions: Solution[] = [
       "Collected material contained for controlled disposal",
     ],
     equipment: [
-      "Pulse jet dust collectors",
+      "Pulse jet baghouse dust collectors",
       "Capture hoods",
       "GI ducting",
       "Centrifugal fans",
@@ -681,7 +689,8 @@ export const solutions: Solution[] = [
         a: "Combustible dust changes the design requirements substantially and is assessed specifically during the site survey.",
       },
     ],
-    keywords: "Industrial Dust Collector, Pulse Jet Dust Collector Sri Lanka",
+    keywords:
+      "Industrial Dust Collector, Pulse Jet Baghouse Dust Collector Sri Lanka, industrial air filtration",
   },
   {
     slug: "industrial-centrifugal-fans",
