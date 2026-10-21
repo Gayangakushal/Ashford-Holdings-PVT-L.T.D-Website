@@ -9,6 +9,8 @@ export const getRouter = () => {
     routeTree,
     context: { queryClient },
     scrollRestoration: true,
+    // Route changes must jump to the top even with global smooth anchor scrolling.
+    scrollRestorationBehavior: "instant",
     defaultPreloadStaleTime: 0,
   });
 
