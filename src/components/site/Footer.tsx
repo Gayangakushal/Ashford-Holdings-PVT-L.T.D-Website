@@ -2,6 +2,7 @@ import { AppLink } from "@/components/site/Buttons";
 import { Logo } from "@/components/site/Logo";
 import { disciplines } from "@/data/disciplines";
 import { addressOneLine, navigation, site } from "@/data/site";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 export function Footer() {
   return (
@@ -47,6 +48,7 @@ export function Footer() {
               <li className="t-small">{addressOneLine}</li>
               <li>
                 <a href={site.whatsappHref} target="_blank" rel="noopener noreferrer">
+                  <WhatsAppIcon />
                   WhatsApp: {site.whatsapp}
                 </a>
               </li>

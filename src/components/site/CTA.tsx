@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { ButtonLink } from "@/components/site/Buttons";
 import { site } from "@/data/site";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 /** Final call to action with airflow lines converging on the actions. */
 export function CTA({
@@ -59,6 +60,7 @@ export function CTA({
             target="_blank"
             rel="noopener noreferrer"
           >
+            <WhatsAppIcon />
             Chat on WhatsApp
           </ButtonLink>
         </div>

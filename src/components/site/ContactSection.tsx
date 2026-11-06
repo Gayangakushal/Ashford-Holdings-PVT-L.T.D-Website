@@ -3,6 +3,7 @@ import { Arrow, ButtonLink } from "@/components/site/Buttons";
 import { SectionLabel } from "@/components/site/SectionLabel";
 import { disciplines } from "@/data/disciplines";
 import { addressOneLine, site } from "@/data/site";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 /**
  * Enquiry form. The project has no form backend, so submitting prepares an email
@@ -124,6 +125,7 @@ export function ContactDetails() {
         <dt className="t-tech">WhatsApp</dt>
         <dd>
           <a href={site.whatsappHref} target="_blank" rel="noopener noreferrer">
+            <WhatsAppIcon />
             {site.whatsapp}
           </a>
           <div className="mt-4">
@@ -133,6 +135,7 @@ export function ContactDetails() {
               target="_blank"
               rel="noopener noreferrer"
             >
+              <WhatsAppIcon />
               Chat on WhatsApp
             </ButtonLink>
           </div>
